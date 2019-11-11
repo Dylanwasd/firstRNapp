@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+  console.log('I am a console statement');
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,29 +41,29 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text>Welcome to C308 Web Frameworks!</Text>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionTitle}>Recommended Eats @ RP</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
+                <Text style={styles.highlight}>Sweet Tooth Waffles</Text> has waffles with cornflakes
+                and chocolate spread, other than usual fillings. Yum Yum!
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
               <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
+                <Text style= {styles.highlight}>Ban Mian</Text> has very nice noodles with very chewy texture
+                with an egg and some pork. It comes with a soup which brings a smile to your face!
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
               <Text style={styles.sectionDescription}>
-                <DebugInstructions />
+                <Text style={styles.highlight}>Thai food at lawn</Text> has very nice thai food. The smell of the food
+                will get your mouth watering. Just imagine that in your mouth. Heavenly!
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
+                <Text style={styles.highlight}>Chicken rice at South</Text> give you ample of chicken rice sauce. The sauce
+                coats over your rice making it slightly salty, adding a nice touch. The chicken is soft and delicate. You can just feel your
+                teeth sinking into the tender meat. Worth the wait!
               </Text>
             </View>
             <LearnMoreLinks />
